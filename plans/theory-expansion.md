@@ -82,9 +82,9 @@ Every theory file follows this structure:
 ## Section Checklist
 
 ### Module 2: IGP
-- [ ] 2.1 IS-IS Deep Dive — IS-IS PDU types, TLVs, adjacency FSM, SPF, DIS election, L1/L2
-- [ ] 2.2 OSPF in SP Networks — LSA types, area mechanics, DR/BDR, OSPFv3, stub/NSSA
-- [ ] 2.3 IGP Convergence Tuning — SPF scheduling, LSA/LSP throttling, BFD, PRC
+- [x] 2.1 IS-IS Deep Dive — IS-IS PDU types, TLVs, adjacency FSM, SPF, DIS election, L1/L2
+- [x] 2.2 OSPF in SP Networks — LSA types, area mechanics, DR/BDR, OSPFv3, stub/NSSA
+- [x] 2.3 IGP Convergence Tuning — SPF scheduling, LSA/LSP throttling, BFD, PRC
 
 ### Module 3: BGP
 - [ ] 3.1 BGP Fundamentals — FSM, UPDATE processing, path attributes, NLRI encoding
@@ -158,4 +158,4 @@ _Add new feature plans here as they're scoped._
 
 ---
 
-*Last updated: 2026-03-11*
+*Last updated: 2026-03-11 — Module 2 complete*
