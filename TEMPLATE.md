@@ -1,6 +1,10 @@
-# Section Template
+# Section Templates
 
-Use this for every sub-section (e.g., `2.1-isis-deep-dive.md`).
+Two templates: **Design** (existing sections) and **Theory** (protocol mechanics).
+
+## Design Template
+
+Use this for design/deployment sections (e.g., `2.1-isis-deep-dive.md`).
 
 ---
 
@@ -99,4 +103,59 @@ Use this for every sub-section (e.g., `2.1-isis-deep-dive.md`).
 
 ---
 *Sources: [list references used]*
+```
+
+---
+
+## Theory Template
+
+Use this for protocol theory sections (e.g., `2.1-isis-deep-dive-theory.md`).
+See `plans/theory-expansion.md` for the full plan, rules, and checklist.
+
+```markdown
+# {Module}.{Section} — {Title} — Protocol Theory
+
+## Protocol Overview
+- What problem it solves
+- Where it sits in the stack (L2/L3/control plane/data plane)
+- Historical context (when created, why, what it replaced)
+
+## Core Mechanisms
+
+### [Mechanism 1: e.g., Adjacency Formation]
+- State machine / FSM with state descriptions
+- Packet/PDU format (field-by-field breakdown)
+- Timers and their defaults (with rationale)
+
+### [Mechanism 2: e.g., Link-State Database]
+- Data structures
+- Flooding/synchronization algorithms
+- Consistency checks
+
+### [Mechanism 3: e.g., SPF Computation]
+- Algorithm description (Dijkstra, Bellman-Ford, etc.)
+- Complexity and scaling behavior
+- Incremental vs full computation
+
+## Key RFCs & Standards
+| RFC | Title | What It Defines |
+|-----|-------|----------------|
+| RFC XXXX | Title | Brief description |
+
+## Protocol Interactions
+- How it interacts with other protocols in the guide
+- Dependencies and assumptions
+- Cross-reference to design file: `→ See X.Y-section-name.md`
+
+## Edge Cases & Gotchas
+- Known implementation differences between vendors
+- Common misunderstandings
+- What the RFC says vs what vendors actually do
+
+## Further Reading
+- Definitive books, papers, conference talks
+
+---
+*This is a theory companion to [X.Y — Title](X.Y-section-name.md).*
+*For deployment, configuration, and troubleshooting, see the design file.*
 ```
