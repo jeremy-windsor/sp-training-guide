@@ -104,11 +104,11 @@ Every theory file follows this structure:
 - [x] 5.3 Segment Routing TE — SR-TE policy architecture, BSID, candidate paths, Flex-Algo
 
 ### Module 6: Segment Routing
-- [ ] 6.1 SR-MPLS Fundamentals — SID types, SRGB, IGP extensions (IS-IS TLV 135 sub-TLV, OSPF)
-- [ ] 6.2 SR-TE Policies — policy model, color/endpoint, dynamic/explicit paths, PCE/PCEP
-- [ ] 6.3 TI-LFA — algorithm (P/Q space, post-convergence SPF), repair tunnel construction
-- [ ] 6.4 SRv6 Fundamentals — SRH format, locator structure, END/END.X/END.DT behaviors
-- [ ] 6.5 SRv6 Network Programming — uSID, network programming model, H.Encaps/H.Insert
+- [x] 6.1 SR-MPLS Fundamentals — SID types, SRGB, IGP extensions (IS-IS TLV 135 sub-TLV, OSPF)
+- [x] 6.2 SR-TE Policies — policy model, color/endpoint, dynamic/explicit paths, PCE/PCEP
+- [x] 6.3 TI-LFA — algorithm (P/Q space, post-convergence SPF), repair tunnel construction
+- [x] 6.4 SRv6 Fundamentals — SRH format, locator structure, END/END.X/END.DT behaviors
+- [x] 6.5 SRv6 Network Programming — uSID, network programming model, H.Encaps/H.Insert
 
 ### Module 7: L3VPN
 - [ ] 7.1 L3VPN Architecture — VRF mechanics, RD/RT encoding, VPNv4/v6 NLRI format
@@ -158,4 +158,4 @@ _Add new feature plans here as they're scoped._
 
 ---
 
-*Last updated: 2026-03-11 — Modules 2-5 complete (14/30)*
+*Last updated: 2026-03-11 — Modules 2-6 complete (19/30)*
