@@ -20,6 +20,7 @@ The expert-level service provider certification track is widely considered the h
 - **Optical transport** (DWDM, OTN, coherent optics)
 - **5G transport and network slicing**
 - **Automation** via YANG, NETCONF, gNMI, streaming telemetry
+- **Design case studies** — ISP backbone, DCI, 5G transport, IXP, L2VPN migration
 
 The Juniper equivalent covers comparable depth from the Junos perspective. This guide covers both platforms side by side.
 
@@ -37,23 +38,31 @@ The Juniper equivalent covers comparable depth from the Junos perspective. This 
 
 ## Curriculum
 
-| Module | Topic | Sections | Words | Audio |
-|--------|-------|----------|-------|-------|
-| **01** | [Foundations](modules/01-foundations/) | 1 | 7,600 | ~35 min |
-| **02** | [IGP at Scale](modules/02-igp/) | 4 | 28,300 | ~139 min |
-| **03** | [BGP at SP Scale](modules/03-bgp/) | 4 | 30,400 | ~166 min |
-| **04** | [MPLS Core Operations](modules/04-mpls/) | 4 | 31,600 | ~172 min |
-| **05** | [Traffic Engineering](modules/05-te/) | 4 | 27,500 | ~143 min |
-| **06** | [Segment Routing](modules/06-sr/) | 6 | 42,100 | ~234 min |
-| **07** | [L3VPN Services](modules/07-l3vpn/) | 5 | 50,100 | ~173 min |
-| **08** | [L2VPN & EVPN](modules/08-l2vpn-evpn/) | 5 | 42,500 | ~205 min |
-| **09** | [Transport & Optical](modules/09-transport/) | 5 | 44,500 | ~194 min |
-| **10** | [Network Slicing & 5G](modules/10-slicing/) | 3 | 25,800 | ~120 min |
-| **11** | [Automation & Telemetry](modules/11-automation/) | 5 | 32,300 | ~133 min |
-| **12** | [Design Case Studies](modules/12-case-studies/) | 5 | 59,000 | ~122 min* |
-| | **Total** | **51** | **421,700+** | **~30.5 hours** |
+| Module | Topic | Sections | Audio |
+|--------|-------|----------|-------|
+| **01** | [Foundations](modules/01-foundations/) | 1 | ~35 min |
+| **02** | [IGP at Scale](modules/02-igp/) | 4 | ~2 hr 19 min |
+| **03** | [BGP at SP Scale](modules/03-bgp/) | 4 | ~2 hr 46 min |
+| **04** | [MPLS Core Operations](modules/04-mpls/) | 4 | ~2 hr 52 min |
+| **05** | [Traffic Engineering](modules/05-te/) | 4 | ~2 hr 23 min |
+| **06** | [Segment Routing](modules/06-sr/) | 6 | ~3 hr 54 min |
+| **07** | [L3VPN Services](modules/07-l3vpn/) | 5 | ~2 hr 53 min |
+| **08** | [L2VPN & EVPN](modules/08-l2vpn-evpn/) | 5 | ~3 hr 25 min |
+| **09** | [Transport & Optical](modules/09-transport/) | 5 | ~3 hr 14 min |
+| **10** | [Network Slicing & 5G](modules/10-slicing/) | 3 | ~2 hr |
+| **11** | [Automation & Telemetry](modules/11-automation/) | 5 | ~2 hr 13 min |
+| **12** | [Design Case Studies](modules/12-case-studies/) | 5 | ~2 hr 41 min |
+| | **Total** | **51** | **~31 hours** |
 
-*Module 12 audio is design + answer tracks only (no theory files — case studies are applied design, not protocol theory).
+Each section includes up to 6 files:
+- `<section>.md` — Design/lecture content
+- `<section>.mp3` — Spoken-word audio of the design content
+- `<section>-answers.md` — Review questions with detailed answers
+- `<section>-answers.mp3` — Spoken-word audio of Q&A
+- `<section>-theory.md` — Deep protocol theory (RFC-anchored, vendor-neutral)
+- `<section>-theory.mp3` — Spoken-word audio of theory content
+
+Theory files cover Modules 2–11 (33 files total). Module 1 is foundational overview; Module 12 is design case studies — neither requires standalone protocol theory.
 
 ## Practice Exams
 
@@ -61,18 +70,22 @@ The [`practice-exams/`](practice-exams/) directory contains 130 IE-SP-level ques
 
 - Module-specific question banks (BGP, SR, L3VPN, EVPN) — 20 questions each
 - Full 50-question mixed mock exam
-- Dual Opus-reviewed for accuracy (multiple CRITICAL corrections applied — RFC 4724, RFC 4577, IS-IS auth scope, TI-LFA defaults)
+- Dual Opus-reviewed for accuracy (multiple critical corrections applied — RFC 4724, RFC 4577, IS-IS auth scope, TI-LFA defaults)
 
 ## Audio Library
 
-Every section includes a spoken-word MP3 stored alongside the markdown in `modules/`. Answer key MP3s are added as they're generated.
+Every section includes spoken-word MP3s stored alongside the markdown in `modules/`. ~31 hours of audio across 137+ tracks.
 
 The [`tts/`](tts/) directory contains the full TTS pipeline — pronunciation dictionary, chunking scripts, batch generation tools. See [`tts/README.md`](tts/README.md) for how to generate or regenerate audio.
 
 - **Voice** — Kokoro TTS, `am_puck(1)+am_liam(1)+am_onyx(0.5)` blend at 1.1x
 - **Format** — MP3 at 128kbps
 - **Pronunciation** — 80+ SP acronyms mapped to phonetic spellings (IS-IS, OSPF, BGP, etc.)
-- **Up to three tracks per section** — `<section>.mp3` (lecture) + `<section>-answers.mp3` (Q&A) + `<section>-theory.mp3` (protocol deep-dive, Modules 2–11)
+- **Three tracks per section** — `<section>.mp3` (lecture) + `<section>-answers.mp3` (Q&A) + `<section>-theory.mp3` (protocol deep-dive, Modules 2–11)
+
+## Accuracy Review
+
+All 12 modules have been reviewed by GPT-5.4 (Forge) for technical accuracy against authoritative RFCs and standards. 178 issues corrected (57 critical) across the full curriculum. Review reports are in [`plans/reviews/`](plans/reviews/).
 
 ## Learning Paths
 
@@ -107,6 +120,7 @@ You know MPLS and BGP. Start with TE evolution (RSVP-TE → SR-TE), then EVPN, t
 | 3031 | MPLS Architecture |
 | 4364 | L3VPN (BGP/MPLS IP VPNs) |
 | 7432 | EVPN |
+| 8214 | EVPN-VPWS |
 | 8402 | Segment Routing Architecture |
 | 8986 | SRv6 Network Programming |
 | 9252 | BGP Overlay Services (SRv6) |
