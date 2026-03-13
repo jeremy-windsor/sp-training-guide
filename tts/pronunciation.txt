@@ -92,7 +92,7 @@ NETCONF|net-conf
 RESTCONF|rest-conf
 FlexAlgo|flex-algo
 Flex-Algo|flex-algo
-VXLAN|V.X. LAN
+VXLAN|V.X. lan
 LACP|L.A.C.P.
 NLRI|N.L.R.I.
 SRLG|S.R.L.G.
@@ -160,7 +160,7 @@ mMTC|massive M.T.C.
 OAM|O.A.M.
 STP|S.T.P.
 P2MP|point to multipoint
-VLAN|V. LAN
+VLAN|V. lan
 PHY|phy
 QSFP|Q.S.F.P.
 CFP2|C.F.P. 2
