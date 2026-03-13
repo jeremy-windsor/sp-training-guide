@@ -83,6 +83,11 @@ NETCONF|net-conf
 RESTCONF|rest-conf
 FlexAlgo|flex-algo
 Flex-Algo|flex-algo
+VXLAN|V.X. LAN
+LACP|L.A.C.P.
+NLRI|N.L.R.I.
+SRLG|S.R.L.G.
+OSNR|O.S.N.R.
 
 # Routing/switching terms
 BFD|B.F.D.
@@ -105,6 +110,7 @@ FEC|F.E.C.
 OTN|O.T.N.
 TCM|T.C.M.
 ODU|O.D.U.
+OTU|O.T.U.
 SID|S.I.D.
 PCS|P.C.S.
 DSP|D.S.P.
@@ -118,15 +124,60 @@ RR|R.R.
 PE|P.E.
 CE|C.E.
 LSA|L.S.A.
+BUM|B.U.M.
+EVI|E.V.I.
+EAD|E.A.D.
+BGW|B.G.W.
+LAG|lag
+BER|B.E.R.
+PMD|P.M.D.
+URLLC|U.R.L.L.C.
+eMBB|e-M.B.B.
+mMTC|massive M.T.C.
+OAM|O.A.M.
+STP|S.T.P.
+P2MP|point to multipoint
+VLAN|V. LAN
+PHY|phy
+QSFP|Q.S.F.P.
+CFP2|C.F.P. 2
+OSFP|O.S.F.P.
+DCO|D.C.O.
+WSS|W.S.S.
+DGD|D.G.D.
+CRC|C.R.C.
+TDM|T.D.M.
+TTI|T.T.I.
+APS|A.P.S.
+ASON|A.S.O.N.
+ODU2|O.D.U. 2
+ODU4|O.D.U. 4
+OTU4|O.T.U. 4
+IGP|I.G.P.
+RD|R.D.
+RT|R.T.
+NCS|N.C.S.
+ACX|A.C.X.
+ASR|A.S.R.
+MX|M.X.
+ACTN|A.C.T.N.
+APC|A.P.C.
+TWAMP|T-wamp
+AMF|A.M.F.
+UDP|U.D.P.
+MAC|mac
 
 # Standards/orgs
 RFC|R.F.C.
 OIF|O.I.F.
 IEEE|I. triple E.
 IETF|I.E.T.F.
+ITU|I.T.U.
+ITU-T|I.T.U. T.
 YANG|yang
 NSSA|N.S.S.A.
 NOC|network operations center
+3GPP|3 G.P.P.
 
 # Addressing
 IPv4|I.P. v4
@@ -139,3 +190,17 @@ SLA|S.L.A.
 ECMP|E.C.M.P.
 PTP|P.T.P.
 SyncE|sync-E
+ZR|Z.R.
+ZR+|Z.R. plus
+QPSK|Q.P.S.K.
+QAM|Q.A.M.
+16QAM|16 Q.A.M.
+64QAM|64 Q.A.M.
+GBd|giga-baud
+nm|nanometer
+dB|D.B.
+dBm|D.B.m.
+Gbps|gigabits per second
+Tbps|terabits per second
+µs|microseconds
+ns|nanoseconds
