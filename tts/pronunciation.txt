@@ -57,6 +57,9 @@ gRPC|g.R.P.C.
 uSID|micro-SID
 oFEC|open F.E.C.
 
+# Common standalone acronyms
+SP|service provider
+
 # Base protocol acronyms
 OSPF|O.S.P.F.
 BGP|B.G.P.
@@ -182,6 +185,17 @@ NOC|network operations center
 # Addressing
 IPv4|I.P. v4
 IPv6|I.P. v6
+
+# Time/duration units (before misc to catch compound forms)
+5s|5 seconds
+10s|10 seconds
+15s|15 seconds
+30s|30 seconds
+60s|60 seconds
+1s|1 second
+2s|2 seconds
+3s|3 seconds
+4s|4 seconds
 
 # Misc technical
 CLI|C.L.I.
