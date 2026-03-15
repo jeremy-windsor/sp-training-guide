@@ -10,6 +10,7 @@ This module focuses on the service-provider problem space around automation. It 
 | 11.2 | [11.2 — Streaming Telemetry](11.2-streaming-telemetry.md) | Traditional SNMP polling asks devices "how are you?" every 5 minutes and hopes nothing happened... | 5 min |
 | 11.3 | [11.3 SR-TE Controller Integration](11.3-sr-te-controller-integration.md) | Segment Routing Traffic Engineering (SR-TE) can operate in two fundamental modes: 1. **Headend-... | 5 min |
 | 11.4 | [11.4 CI/CD for Network Config](11.4-cicd-network-config.md) | In SP networks, config mistakes are rarely isolated. One bad route-policy can blackhole a regio... | 2 min |
+| 11.5 | [11.5 Lab — gNMI + SR-TE Automation](11.5-lab-gnmi-sr-te-automation.md) | Closed-loop automation lab | 3-4 hr |
 
 ## Prerequisites
 - Operational experience across prior modules; comfort with APIs/models.
